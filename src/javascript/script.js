@@ -1,14 +1,13 @@
 $(document).ready(function() {
-    $('#mobile_btn').on('click', function () {
+   
+    $('#mobile_btn').on('click touchstart', function () {
         $('#mobile_menu').toggleClass('active');
-        $(this).find('i').toggleClass('fa-x'); // Alterna o ícone do botão
+        $(this).find('i').toggleClass('fa-x'); 
     });
 
     $('.nav-item').on('click', function () {
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
-
-        // Fecha o menu ao clicar em um item (opcional)
         $('#mobile_menu').removeClass('active');
     });
 
