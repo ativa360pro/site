@@ -67,6 +67,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 12px;
     }
 
     #mobile_nav_list {
