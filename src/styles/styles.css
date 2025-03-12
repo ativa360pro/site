@@ -152,3 +152,9 @@ html {
 .faq-question:active + .faq-answer {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .faq-answer {
+        display: block !important;  
+    }
+}
