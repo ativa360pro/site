@@ -19,14 +19,16 @@ $(document).ready(function() {
     });
 
 
-    $(".faq-question").on("click touchstart", function (e) {
-        e.preventDefault();
-        let answer = $(this).next(".faq-answer");
+  $(".faq-question").on("click touchstart", function (e) {
+    e.preventDefault(); 
 
-        if (answer.is(":visible")) {    
-            answer.slideUp();
-        } else {
-            $(".faq-answer").slideUp(); 
-            answer.slideDown();
-        }
+    let answer = $(this).next(".faq-answer");
+
+    if (answer.is(":visible")) {
+        answer.stop(true, true).slideUp(300); 
+    } else {
+        $(".faq-answer").stop(true, true).slideUp(300);  
+        answer.stop(true, true).slideDown(300);
+    }
+});
     });
