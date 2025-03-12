@@ -23,14 +23,10 @@ $(document).ready(function() {
         e.preventDefault();
         let answer = $(this).next(".faq-answer");
 
-        if (answer.is(":visible")) {
+        if (answer.is(":visible")) {    
             answer.slideUp();
-            $(this).removeClass('active'); 
         } else {
             $(".faq-answer").slideUp(); 
-            $(".faq-question").removeClass('active'); 
             answer.slideDown();
-            $(this).addClass('active');
         }
     });
-});
