@@ -19,16 +19,15 @@ $(document).ready(function() {
     });
 
 
-  $(".faq-question").on("click touchstart", function (e) {
-    e.preventDefault(); 
+$(".faq-question").on("click touchend", function (e) {
+    e.preventDefault();  
 
     let answer = $(this).next(".faq-answer");
 
     if (answer.is(":visible")) {
-        answer.stop(true, true).slideUp(300); 
+        answer.stop(true, true).slideUp(500);  
     } else {
-        $(".faq-answer").stop(true, true).slideUp(300);  
-        answer.stop(true, true).slideDown(300);
+        $(".faq-answer").stop(true, true).slideUp(500);  
+        answer.stop(true, true).slideDown(500); 
     }
 });
-    });
