@@ -2,6 +2,8 @@
     display: flex;
     flex-direction:  column;
     align-items: center;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     scroll-margin-top: 80px; 
     padding-top: 80px;
@@ -68,7 +70,16 @@
 @media screen and (max-width: 600px) {
     .dish {
         width: 100%;
+        text-align: center;
     }
+}
+
+
+#modules .section-subtitle {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    line-height: 1;
 }
 
 .dish-image {
